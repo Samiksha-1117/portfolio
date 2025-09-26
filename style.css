@@ -1,0 +1,234 @@
+    /* Navbar overlay on top of hero image, right corner */
+    .custom-navbar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 10;
+      background-color: transparent;
+      padding: 10px 20px;
+    }
+
+    .custom-navbar .nav-link {
+      color: white;
+      /* Make nav links visible over background */
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .custom-navbar .nav-link:hover {
+      font-weight: 700;
+      color: #0d1b2a;
+    }
+
+    /* Hero image full height */
+    #hero-carousel .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    /* Light grey transparent overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      /* slightly darker overlay for text visibility */
+      z-index: 1;
+    }
+
+    /* Overlay text on hero image */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      max-width: 90%;
+    }
+
+    /* Download CV Button Styling */
+    .download-cv-btn {
+      margin-top: 20px;
+      background-color: #0d1b2a;
+      color: white;
+      font-weight: 600;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-cv-btn:hover {
+      background-color: #081026;
+      color: white;
+    }
+
+    /* Highlight text */
+    .highlight {
+      color: #0d1b2a;
+      font-weight: 700;
+    }
+
+    /* About Section Styling */
+    #about {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      text-align: center;
+    }
+
+    #about h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0d1b2a;
+      font-weight: 700;
+    }
+
+    /* Skills circles in single row without scrollbar */
+    .skills-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+
+    .skill-circle {
+      flex: 1 1 100px;
+      max-width: 100px;
+      min-width: 80px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #0d1b2a;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Projects Section Styling */
+    #projects {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    #projects h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #0d1b2a;
+      font-weight: 700;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Dark navy blue button for projects */
+    .project-card .btn {
+      background-color: #0d1b2a;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-card .btn:hover {
+      background-color: #081026;
+      color: white;
+    }
+
+    /* Contact Section Styling */
+    #contact h3 {
+      font-size: 2rem;
+      color: #0d1b2a;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .contact-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 700;
+      color: #0d1b2a;
+      margin-bottom: 10px;
+    }
+
+    .contact-detail {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      color: #0d1b2a;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #081026;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-text {
+        font-size: 1.6rem;
+      }
+
+      #about h3,
+      #projects h3,
+      #contact h3 {
+        font-size: 1.5rem;
+      }
+
+      #about p {
+        font-size: 1rem;
+      }
+
+      .skill-circle {
+        min-width: 70px;
+        max-width: 90px;
+        height: 80px;
+        font-size: 0.9rem;
+      }
+
+      /* Navbar right corner adjustment on mobile */
+      .custom-navbar {
+        right: 10px;
+      }
+
+      .custom-navbar .navbar-nav {
+        text-align: right;
+      }
+    }

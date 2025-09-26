@@ -1,0 +1,75 @@
+
+    body {
+      background-color: #f2f2f2; /* Light grey background */
+      color: #0d1b2a; /* Dark navy blue text */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar styling */
+    .custom-navbar {
+      background-color: #f2f2f2; /* Same as page background */
+      padding: 10px 30px;
+    }
+
+    .custom-navbar .nav-link {
+      color: #0d1b2a; /* Dark navy blue */
+      font-weight: 500;
+      transition: color 0.3s ease, font-weight 0.3s ease;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: #081026; /* Darker navy blue on hover */
+      font-weight: 700;
+    }
+
+    /* Circular image with thin border */
+    #about-image {
+      display: block;
+      margin: 40px auto 20px auto;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #0d1b2a; /* Very thin dark navy blue border */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #about-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* About text section */
+    #about-info {
+      max-width: 800px;
+      margin: 20px auto 60px auto;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      padding: 0 20px;
+    }
+
+    #about-info h3 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      #about-image {
+        width: 180px;
+        height: 180px;
+      }
+
+      #about-info {
+        font-size: 1rem;
+      }
+
+      #about-info h3 {
+        font-size: 1.5rem;
+      }
+    }
+ 
